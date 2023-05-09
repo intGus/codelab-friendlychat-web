@@ -7,7 +7,23 @@
  * 4. Copy the config object snippet, then add it here.
  */
 const config = {
-  /* TODO: ADD YOUR FIREBASE CONFIGURATION OBJECT HERE */
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "firebase/app";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCEt0YRc_5tPmZybhB0jZvMnnrJB01TH_4",
+    authDomain: "friendlychat-f1d1e.firebaseapp.com",
+    projectId: "friendlychat-f1d1e",
+    storageBucket: "friendlychat-f1d1e.appspot.com",
+    messagingSenderId: "357551729811",
+    appId: "1:357551729811:web:49a2b66a205e1751e0b166"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
 };
 
 export function getFirebaseConfig() {
